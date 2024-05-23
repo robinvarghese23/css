@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+          position: relative;
+        }
+        
+        .black-box {
+          position: relative;
+          z-index: 1;
+          border: 2px solid rgb(18, 7, 177);
+          height: 100px;
+          margin: 30px;
+        }
+        
+        .gray-box {
+          position: absolute;
+          z-index: 3;
+          background: lightgray;
+          height: 60px;  
+          width: 70%;
+          left: 50px;
+          top: 50px;
+        }
+        
+        .green-box {
+          position: absolute;
+          z-index: 2; 
+          background: rgb(202, 123, 3);
+          width: 35%;
+          left: 270px;
+          top: -15px;
+          height: 100px;
+        }
+#a1{
+  background-color: rgb(216, 252, 13);
+  width: 200px;
+  height: 100px;
+  border: 1px solid black;
+  overflow: scroll;
+}
+  img {
+  display: block;
+  margin: auto;
+  }
+  #a2{
+  background-color: green;
+  color: white;
+  padding: 25px;
+  text-align: center;
+}
+#a2:hover{
+            background-color: rgba(19, 18, 19, 0.897);
+        }
+p::first-line{
+    color: blueviolet;font-variant: initial;
+}
+p::before{  
+height: 5px;width: 5px;        content: url(smiley.jpg);
+}
+ #a3::selection{
+    color: coral;background-color: aqua;
+}
+
+        </style>
+</head
+
+<body>
+    <div class="container">
+        <div class="black-box">white box (z-index: 1)</div>
+        <div class="gray-box">Gray box (z-index: 3)</div>
+        <div class="green-box">yellow box (z-index: 2)</div>
+      </div>
+<div id="a1" >GitHub is a developer platform that allows developers to create, store, manage and share their code. It uses Git software, providing the distributed version control of Git plus access control, bug tracking, software feature requests, task management, continuous 
+            </div>
+        <div id="a2">centering an image using align </div><br><br>
+
+    <img src="ooty-1655457424_bca80f81e8391ebdaaca.webp" width="50%">
+    <p id="a3">Git is a DevOps tool used for source code management. It is a free and open-source version control system used to handle small to very large projects . <br>
+         Git is used to tracking changes in the source code, enabling multiple developers to work together on non-linear developmen</p>
+</body>
+</html>
