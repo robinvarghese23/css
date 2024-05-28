@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .a7 {
+  background-color: pink;
+}
+
+ 
+  
+        .a1{grid-area:webdiary ;}
+        .a2{grid-area: home;background-color: bisque;}
+        .a3{grid-area: about;background-color: bisque;}
+        .a4{grid-area: contact;background-color: bisque;}
+        .a5{grid-area: css ;background-color: rgba(255, 255, 255, 0.842);}
+        .a6{grid-area: image;}
+        .a7{grid-area: lorem;background-color: aquamarine;text-align: center; padding-top: 20px;}
+        .a8{grid-area: readmore;background-color: rgb(80, 99, 80);}
+        .a9{grid-area: viewall;background-color: rgb(14, 241, 14);}
+    .a{
+        display: grid;
+        grid-template-areas:'webdiary webdiary webdiary webdiary webdiary webdiary home about contact'
+        'css css css css css css image image image'
+        'lorem lorem lorem lorem lorem lorem image image image'
+        'readmore readmore readmore viewall viewall viewall image image image';
+        grid-template-rows: 80px 200px 100PX 100PX;
+
+    }
+    .a1{
+    background-color: gray;}
+    .a6{
+        width:500px;
+        height:200%;
+    }
+   @media only screen and (max-width:600px) {
+    .a{ grid-template-rows: 80px 100px 300px 500px 80px 80px ;
+
+        grid-template-areas: 
+        'webdiary webdiary webdiary webdiary webdiary webdiary' 
+        'home home about about contact contact'
+        'css css css css css css' 
+        'image image image image image image'
+        'lorem lorem lorem lorem lorem lorem' 
+        'readmore readmore readmore viewall viewall viewall' 
+        
+
+    }
+    
+   }
+
+    </style>
+</head>
+<body>
+    <div class="a">
+        <div class="a1">web diary</div>
+        <div class="a2">home</div>
+        <div class="a3">about</div>
+        <div class="a4">contact</div>
+        <div class="a5"><h3>css grid example</h3><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A, impedit consequuntur,<br> provident id consequatur suscipit aliquid pariatur excepturi minus quo doloribus, odit repellat amet sed dolore. Ad vero recusandae aut.</p> </div>
+        <div class="a6"><img src="scenary.avif" alt=""></div>
+        <div class="a7">loremipsum dolor sit amet</div>
+        <div class="a8">readmore</div>
+        <div class="a9">viewall</div>
+    </div>
+</body>
+</html>
